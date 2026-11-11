@@ -1,7 +1,10 @@
 { pkgs, ... }:
 {
   wayland.windowManager.hyprland = {
-    settings.monitor = [ ",preferred,auto,auto" ];
+    settings.monitor = [ 
+      "DP-3, preferred, 0x0, 1"
+      "HDMI-A-1, preferred, auto-center-down, 1"
+    ];
 
     extraConfig = ''
       # hyprlang noerror true
