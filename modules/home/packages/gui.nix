@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
     ## Multimedia
@@ -10,6 +10,7 @@
     pavucontrol
     video-trimmer
     vlc
+    inputs.spotifast.packages.${stdenv.hostPlatform.system}.default
 
     newsflash
 

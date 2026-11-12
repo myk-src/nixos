@@ -30,10 +30,12 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake/beta";
 
     llm-agents.url = "github:numtide/llm-agents.nix";
+  
+    spotifast.url = "github:crmne/spotifast";
   };
 
   outputs =
-    { nixpkgs, self, llm-agents, ... }@inputs:
+    { nixpkgs, self, llm-agents, spotifast, ... }@inputs:
     let
       username = "myk";
       system = "x86_64-linux";

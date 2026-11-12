@@ -12,9 +12,17 @@ let
     terminal = [ "ghostty.desktop" ];
     archive = [ "org.gnome.FileRoller.desktop" ];
     discord = [ "webcord.desktop" ];
+    web = [ "google-chrome.desktop" ];
   };
 
   mimeMap = {
+    web = [ 
+      "text/html"
+      "x-scheme-handler/http"
+      "x-scheme-handler/unknown"
+      "x-scheme-handler/https"
+      "x-scheme-handler/about"
+    ];
     text = [ "text/plain" ];
     image = [
       "image/bmp"
